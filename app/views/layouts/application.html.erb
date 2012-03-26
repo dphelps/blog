@@ -12,9 +12,11 @@
   <body>
     <%= render 'partials/header' %>
     <div class="container">
-      <%= yield %>
+      <div class="center hero-unit">
+        <%= yield %>
+        <%= render 'partials/footer' %>
+      </div>
+      <%= debug(params) if Rails.env.development? %>      
     </div>
-    <%= render 'partials/footer' %>
-    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'annotate', '~>2.4.1.beta'
@@ -13,6 +14,7 @@ group :development do
 end
 
 group :test do
+  gem 'factory_girl_rails'
   gem 'rspec'
   gem 'webrat'
 end
