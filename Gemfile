@@ -7,10 +7,13 @@ gem 'bootstrap-sass'
 
 gem 'sqlite3'
 gem 'gravatar_image_tag'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :development do
   gem 'annotate', '~>2.4.1.beta'
   gem 'rspec-rails'
+  gem 'faker'
 end
 
 group :test do
