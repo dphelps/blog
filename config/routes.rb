@@ -2,6 +2,7 @@ Blog::Application.routes.draw do
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
+  resources :microposts, :only => [:create, :destroy]
 
   match '/contact' => 'pages#contact'
   

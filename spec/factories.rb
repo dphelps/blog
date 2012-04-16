@@ -9,5 +9,12 @@ FactoryGirl.define do
   sequence :email do |n|
     "person-#{n}@cmu.edu"
   end
+  
+  FactoryGirl.define do 
+    factory :micropost do
+      content "Foo bar"
+      association :user
+    end
+  end
 end
 
